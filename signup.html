@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ls.css">
+    <script src="https://kit.fontawesome.com/ad8ec24b97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="center">
+        <h1><b>Signup Form</b></h1>
+        <form id="signup-form">
+            <div id="result"></div>
+            <div class="inputbox">
+                <input type="text" required="required" id="uname">
+                <span>UserName</span>
+            </div>
+            <div class="inputbox">
+                <input type="text" required="required" id="mail">
+                <span>Email</span>
+            </div>
+            <div class="inputbox">
+                <input type="password" required="required" id="password" class="password">
+                <span>Password</span>
+                <p><i class="fa-regular fa-eye" id="toggleBtn"></i></p>
+            </div>
+            <div class="inputbox">
+                <input type="password" required="required" id="confirm-password">
+                <span> confirm Password</span>
+                <p><i class="fa-regular fa-eye" id="toggleBtn1"></i></p>
+            </div>
+            <div class="inputbox">
+                <input type="button" value="submit" id="sign-up" onclick="signup()">
+            </div>
+            <div class="input">
+                <span>Already a user<a href="login.html">login</a></span>
+              </div>
+        </form>
+    </div>
+    <script src="js/ls.js"></script>
+</body>
+</html>

@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #dbd5d5;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: #a7a4a4;
+  height: 80px;
+}
+
+.header-active {
+  position: absolute;
+  top: 0;
+  transition: 0.5s;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.logouticon {
+  margin: 0px 0px 0px 8px;
+  font-size: large;
+}
+
+.logout {
+  display: flex;
+}
+
+.mobile-nav {
+  display: none;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  margin-top: 20px;
+}
+
+#search-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#search-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#search-button:hover {
+  background-color: #45a049;
+}
+
+.account {
+  display: flex;
+  font-size: 20px;
+  color: white;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 20px;
+}
+
+.box {
+  color: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  position: relative;
+}
+
+.cart-count,
+.cart1-count {
+  position: absolute;
+  background-color: #2f3542;
+  top: -5px;
+  right: 0;
+  padding: 3px;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+#cart-icon {
+  font-size: 2rem;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 4rem;
+  margin: auto;
+  width: 100%;
+  margin-top: 40px;
+}
+
+h2.title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.shop-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  gap: 1.5rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.food-box {
+  position: relative;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+  border-radius: 3px;
+}
+
+.pic {
+  overflow: hidden;
+}
+
+.pic:hover img {
+  transform: scale(1.5);
+}
+
+.food-img {
+  transition: 0.4s;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.food-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ff6348;
+}
+
+.food-price {
+  font-weight: 500;
+}
+
+.add-cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #2ed573;
+  color: white;
+  padding: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.add-cart:hover {
+  background-color: rgba(255, 0, 0, 0.786);
+}
+
+
+.cart,
+.cart1 {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 350px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  background-color: rgb(170, 169, 169);
+  box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+  z-index: 100;
+}
+
+.cart-active,
+.cart1-active {
+  right: 0;
+  transition: 0.5s;
+}
+
+.cart-title,
+.cart1-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.cart-box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 10px;
+}
+
+.cart-img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+}
+
+.detail-box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-food-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #ff6348;
+  font-weight: 500;
+}
+
+.cart-price,
+.cart1-price {
+  font-weight: 500;
+}
+
+.cart-quantity {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.cart-remove {
+  font-size: 24px;
+  color: red;
+  cursor: pointer;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.total-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.total-price {
+  margin-left: 0.5rem;
+}
+
+.btn-buy {
+  padding: 12px 20px;
+  background-color: #2f3542;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cart-icon {
+  font-size: 35px;
+}
+
+#cart-close,
+#cart1-close {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.order-list {
+  list-style-type: none;
+  border-bottom: 2px solid black;
+}
+
+.user-items {
+  display: block;
+}
+
+
+.close {
+  display: none;
+}
+
+@media(max-width:380px) {
+  .nav {
+    display: block;
+    text-align: center;
+  }
+
+
+  .close {
+    display: block;
+    font-size: 40px;
+    float: right;
+    padding: 10px;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+
+  .header {
+      width: auto;
+      height: 280px;
+      position: fixed;
+      right: 0;
+      top: -100%;
+      overflow-x: hidden;
+      background-color: rgb(170, 169, 169);
+      z-index: 101;
+    }
+
+    .header-active{
+      top: 0;
+      transition: 0.5s;
+    }
+
+  
+
+  #search-input {
+    width: 60px;
+    margin-left: 50px;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: space-around;
+    color: black;
+    padding-top: 30px;
+  }
+
+  .logo1 {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 40px;
+
+  }
+
+  .menu-list {
+    padding-top: 20px;
+    cursor: pointer;
+  }
+
+  .account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-list {
+    font-size: 30px;
+    display: block;
+  }
+  .mobile-nav{
+    position: relative;
+  }
+
+  .signup {
+    margin-left: 20px;
+  }
+
+  .logout {
+    margin-right: 20px;
+  }
+
+  .box {
+    margin-right: 10px;
+  }
+
+
+}
+
+
+.food-box-1 {
+  height: 400px;
+  width: 300px;
+
+}
+
+/* back */
+.back {
+  font-size: 25px;
+  cursor: pointer;
+  padding-left: 45%;
+  padding-bottom: 2%;
+}
+
+/* alertbox */
+.modal-body {
+  text-align: center;
+}

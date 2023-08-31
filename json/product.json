@@ -1,0 +1,83 @@
+  [
+      {
+        "image": "images/carrot.jpg",
+        "name": "Carrot",
+        "price": 0.49
+      },
+      {
+        "image": "images/tomato.jpg",
+        "name": "Tomato",
+        "price": 0.79
+      },
+      {
+        "image": "images/potato.jpg",
+        "name": "Potato",
+        "price": 0.59
+      },
+      {
+        "image": "images/onion.jpg",
+        "name": "Onion",
+        "price": 0.39
+      },
+      {
+        "image": "images/natsayan.jpg",
+        "name": "Lettuce",
+        "price": 1.29
+      },
+      {
+        "image": "images/cucumber.jpg",
+        "name": "Cucumber",
+        "price": 0.89
+      },
+      {
+        "image": "images/brokoli.jpg",
+        "name": "brokoli",
+        "price": 1.99
+      },
+      {
+        "image": "images/coconut.jpg",
+        "name": "coconut",
+        "price": 0.99
+      },
+      {
+        "image": "images/apple.jpg",
+        "name": "Apple",
+        "price": 1.99
+      },
+      {
+        "image": "images/banana.jpg",
+        "name": "Banana",
+        "price": 0.99
+      },
+      {
+        "image": "images/pomogrante.webp",
+        "name": "pomogranate",
+        "price": 0.49
+      },
+      {
+        "image": "images/pineapple.jpeg",
+        "name": "pinapple",
+        "price": 0.79
+      },
+      {
+        "image": "images/orange.webp",
+        "name": "orange",
+        "price": 0.59
+      },
+      {
+        "image": "images/kiwi.webp",
+        "name": "kiwi",
+        "price": 0.39
+      },
+      {
+        "image": "images/guava.webp",
+        "name": "guava",
+        "price": 1.29
+      },
+      {
+        "image": "images/grape.jpg",
+        "name": "grape",
+        "price": 0.89
+      }
+]
+  

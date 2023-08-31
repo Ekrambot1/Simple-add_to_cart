@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/ls.css">
+  <script src="https://kit.fontawesome.com/ad8ec24b97.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="center">
+    <h1><b>Login Form</b></h1>
+    <form>
+      <div id="result"></div>
+      <div class="inputbox">
+        <input type="text"  required="required" id="uname">
+        <span>usename</span>
+      </div>
+      <div class="inputbox">
+        <input type="password" required="required" id="password" class="password">
+        <span>Password</span>
+        <p><i class="fa-regular fa-eye" id="toggleBtn"></i></p>
+      </div>
+      <div class="inputbox">
+        <input type="button" value="submit" onclick="login()" >
+      </div>
+      <div class="input">
+        <span>New user<a href="signup.html">Signup</a></span>
+      </div>
+    </form>
+  </div>
+  <script src="./js/ls.js"></script>
+</body>
+
+</html>

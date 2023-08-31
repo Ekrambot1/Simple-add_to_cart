@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://media.istockphoto.com/id/1300476665/photo/high-angle-view-asian-chinese-womans-hand-on-mobile-app-for-online-food-delivery-during.jpg?s=1024x1024&w=is&k=20&c=HrJt69vG-yNIvrz-olT5hCGW_untkYEogJRVoGJXkgg=');
+  background-size: cover;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Sansita Swashed", cursive;
+}
+.center {
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+}
+.center h1 {
+  font-size: 2em;
+  border-bottom: 3px solid dodgerblue;
+  padding: 2px;
+  text-align: center;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid #000;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+}
+.center .inputbox [type="button"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+}
+.center .inputbox:hover [type="button"] {
+  cursor: pointer;
+}
+
+#success{
+  text-align: center;
+  color: green;
+}
+.input{
+  text-align: center;
+}
+#result{
+  text-align: center;
+  padding: 5%;
+}
+@media (max-width:400px) {
+  .center{
+    height: auto;
+    width: 200px;
+  }
+ #uname,
+ #mail,
+ #password,
+ #confirm-password{
+  width: 200px;
+ }
+ .center h1{
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 5px;
+ }
+ body{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrnttmFhsLrX4N4UilvYZVzE1l3EdV9egTA_w9MyZTyA&s');
+  background-size: cover;
+ }
+}
+
+.fa-eye-slash,
+.fa-eye{
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 95%;
+  cursor: pointer;
+}
